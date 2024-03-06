@@ -1,20 +1,20 @@
-/// <reference types="cypress"/>
+/// <reference types="cypress" />
 
 class LoginPage {
-  get #email() {
-    return cy.get('[data-testid="email"]');
+  get #user() {
+    return cy.get('#user_login');
   }
-  get #password() {
-    return cy.get('[data-testid="password"]');
+  get #pass() {
+    return cy.get('#user_pass');
   }
-  get #btnLogin() {
-    return cy.get('[data-testid="btnLogin"]');
+  get #login() {
+    return cy.get('#wp-submit');
   }
 
-  login(usuario, senha) {
-    this.#email.type(usuario);
-    this.#password.type(senha);
-    this.#btnLogin.click();
+  login(user, pass) {
+    this.#user.wait(200).type(user, { force: true });
+    this.#pass.type(pass);
+    this.#login.click();
   }
 }
 

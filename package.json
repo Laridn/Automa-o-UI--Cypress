@@ -1,12 +1,12 @@
 {
-  "name": "cy-pageobjects",
+  "name": "3---ui-testing-patternes---app-actions",
   "version": "1.0.0",
-  "description": "Exemplo de PageObjects",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run"
   },
-  "author": "Laridn",
+  "author": "laridn",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.6"
